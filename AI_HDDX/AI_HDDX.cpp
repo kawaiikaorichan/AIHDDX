@@ -92,6 +92,16 @@ extern "C"
 				ReplacePVM("SONIC", "SONIC_dxd");
 			}
 
+			if (KindofTextDX == OriginalDX)
+			{
+				ReplacePVM("ev_tr1_with_sonic", "ev_tr1_with_sonic_dx");
+				ReplacePVM("ev_tr2before_with_sonic", "ev_tr2before_with_sonic_dx");
+				ReplacePVM("ev_tr2change_with_sonic", "ev_tr2change_with_sonic_dx");
+				ReplacePVM("shooting1", "shooting1_dx");
+				ReplacePVM("shooting2", "shooting2_dx");
+				ReplacePVM("sonic", "sonic_dx");
+			}
+
 			if (DXSS == Upgraded)
 			{
 				if (DXcharsR)
@@ -125,6 +135,18 @@ extern "C"
 				else
 				{
 					ReplacePVM("supersonic", "supersonic_ld");
+				}
+			}
+
+			if (DXSS == OriginalDXSS)
+			{
+				if (DXcharsR)
+				{
+					ReplacePVM("supersonic", "supersonic_dxr");
+				}
+				else
+				{
+					ReplacePVM("supersonic", "supersonic_dx");
 				}
 			}
 
@@ -185,6 +207,13 @@ extern "C"
 					ReplacePVM("m_tr_p", "m_tr_p_dxd");
 					ReplacePVM("Miles", "Miles_dxdr");
 				}
+
+				if (KindofTextDX == OriginalDX)
+				{
+					ReplacePVM("m_head_1", "m_head_1_dx");
+					ReplacePVM("m_tr_p", "m_tr_p_dx");
+					ReplacePVM("Miles", "Miles_r");
+				}
 			}
 			else
 			{
@@ -200,6 +229,13 @@ extern "C"
 					ReplacePVM("m_head_1", "m_head_1_dxd");
 					ReplacePVM("m_tr_p", "m_tr_p_dxd");
 					ReplacePVM("Miles", "Miles_dxd");
+				}
+
+				if (KindofTextDX == OriginalDX)
+				{
+					ReplacePVM("m_head_1", "m_head_1_dx");
+					ReplacePVM("m_tr_p", "m_tr_p_dx");
+					ReplacePVM("Miles", "Miles_dx");
 				}
 			}
 
@@ -233,6 +269,11 @@ extern "C"
 				ReplacePVM("Knuckles", "Knuckles_dxd");
 			}
 
+			if (KindofTextDX == OriginalDX)
+			{
+				ReplacePVM("Knuckles", "Knuckles_dx");
+			}
+
 			if (DCcharacters)
 			{
 				if (KindofTextDC == LikeDX)
@@ -260,6 +301,11 @@ extern "C"
 				{
 					ReplacePVM("Amy", "Amy_dxdr");
 				}
+
+				if (KindofTextDX == OriginalDX)
+				{
+					ReplacePVM("Amy", "Amy_r");
+				}
 			}
 			else
 			{
@@ -271,6 +317,11 @@ extern "C"
 				if (KindofTextDX == DreamcastT)
 				{
 					ReplacePVM("Amy", "Amy_dxd");
+				}
+
+				if (KindofTextDX == OriginalDX)
+				{
+					ReplacePVM("Amy", "Amy_dx");
 				}
 			}
 
@@ -300,6 +351,11 @@ extern "C"
 				ReplacePVM("Big", "Big_dxd");
 			}
 
+			if (KindofTextDX == OriginalDX)
+			{
+				ReplacePVM("Big", "Big_dx");
+			}
+
 			if (DCcharacters)
 			{
 				if (KindofTextDC == LikeDX)
@@ -326,6 +382,11 @@ extern "C"
 				ReplacePVM("Metalsonic", "Metalsonic_dxd");
 			}
 
+			if (KindofTextDX == OriginalDX)
+			{
+				ReplacePVM("Metalsonic", "Metalsonic_dx");
+			}
+
 			if (DCcharacters)
 			{
 				if (KindofTextDC == LikeDX)
@@ -342,15 +403,15 @@ extern "C"
 
 		if (LWMural == Preview)
 		{
-			ReplacePVM("RUIN03", "RUIN03_DCP");
+			ReplacePVM("RUIN03", "RUIN03P");
 		}
 
-		ReplacePVM("DXR_AMY", "amy_r");
-		ReplacePVM("DXR_AMY_EFF", "AMY_EFF");
-		ReplacePVM("DXR_MILES", "miles_r");
+		ReplacePVM("DXR_AMY_EFF", "AMY_EFF_DC");
+		ReplacePVM("DXR_CREAM", "cream_dx");
 		ReplacePVM("DXR_KNU_EFF", "KNU_EFF_HD");
-		ReplacePVM("DXR_SON_EFF", "SON_EFF");
-		ReplacePVM("DXR_HYPER", "hypersonic_dxr")
+		ReplacePVM("DXR_SON_EFF", "SON_EFF_DC");
+		ReplacePVM("DXR_TIKAL", "tikal_dx");
+		ReplacePVM("DXR_HYPER", "hypersonic_dxr");
 	}
 	__declspec(dllexport) ModInfo SADXModInfo = { ModLoaderVer };
 }
